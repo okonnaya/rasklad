@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 const pages = require('./build/pages.cjs')
+const SeoPlugin = require('./build/seo.cjs')
 const cards = require('./src/data/tarotCards.json')
 
 const pageEntries = { ...pages }
@@ -94,6 +95,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new SeoPlugin(),
     new MiniCssExtractPlugin({ filename: 'assets/[name].[contenthash:8].css' }),
     new CopyPlugin({
       patterns: [

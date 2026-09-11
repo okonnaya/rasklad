@@ -27,7 +27,7 @@
     "test:js": "node --test tests/*.test.cjs",
     "test": "npm run test:js && npm run test:db",
     "check": "npm run lint && npm test && npm run build && npm run check:build",
-    "check:build": "node scripts/check-build.cjs"
+    "check:build": "node scripts/check-build.cjs && python3 scripts/check_seo.py"
   },
   "devDependencies": {
     "@babel/core": "^7.29.7",
