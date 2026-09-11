@@ -367,7 +367,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 24px;
   align-items: center;
   text-align: center;
   margin-top: 17vh;
@@ -375,9 +376,9 @@
   bottom: 0;
   width: 100%;
   background-color: var(--black);
-  height: 500px;
+  height: auto;
   border-radius: 22px 22px 0 0;
-  padding: 60px;
+  padding: 24px;
   .Q_MenuStar {
     background-repeat: no-repeat;
     background-size: contain;
@@ -799,9 +800,9 @@
     }
   }
   .O_Footer {
-    height: 376px;
+    height: auto;
     border-radius: 22px 22px 0 0;
-    padding: 50px;
+    padding: 24px;
     .Q_MenuStar {
       height: 32px;
       width: 32px;
@@ -1085,9 +1086,9 @@
     }
   }
   .O_Footer {
-    height: 287px;
+    height: auto;
     border-radius: 22px 22px 0 0;
-    padding: 30px;
+    padding: 24px;
     .Q_MenuStar {
       height: 25px;
       width: 25px;
@@ -1452,9 +1453,9 @@
     }
   }
   .O_Footer {
-    height: 208px;
+    height: auto;
     border-radius: 22px 22px 0 0;
-    padding: 23px;
+    padding: 24px;
     .Q_MenuStar {
       height: 20px;
       width: 20px;
@@ -1947,10 +1948,10 @@
     }
   }
   .O_Footer {
-    height: 278px;
+    height: auto;
     border-radius: 8px 8px 0 0;
-    padding-top: 25px;
-    padding-bottom: 50px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     .Q_MenuStar {
       height: 20px;
       width: 20px;
