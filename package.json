@@ -12,6 +12,14 @@
   },
   "homepage": "https://github.com/ZakharDay/static-site-boilerplate#readme",
   "scripts": {
+    "prestart": "npm run db:export",
+    "prewatch": "npm run db:export",
+    "prebuild": "npm run db:export",
+    "db:seed": "python3 scripts/content_db.py seed",
+    "db:export": "python3 scripts/content_db.py export",
+    "db:import": "python3 scripts/content_db.py import-airtable",
+    "db:status": "python3 scripts/content_db.py status",
+    "test:db": "python3 -m unittest discover -s scripts -p 'test_*.py'",
     "start": "webpack serve --open --config webpack.dev.js",
     "watch": "webpack --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"

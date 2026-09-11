@@ -3,3 +3,9 @@
 yarn-error.log
 /node_modules
 /dev_build
+
+.env.local
+.airtable-tokens.local.json
+__pycache__/
+*.sqlite3-journal
+database/before-import.sqlite3
