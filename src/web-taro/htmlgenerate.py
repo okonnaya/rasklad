@@ -93,7 +93,7 @@ for i in range(len(page_names)):
 
     <meta
       property="og:image"
-      content="https://rasklad.adc.ac/share/metatags.jpg"
+      content="https://raskladik.com/share/metatags.jpg"
     />
 
     <!-- Twitter -->
@@ -105,7 +105,7 @@ for i in range(len(page_names)):
     />
     <meta
       property="twitter:image"
-      content="https://rasklad.adc.ac/share/metatags.jpg"
+      content="https://raskladik.com/share/metatags.jpg"
     />
 
     <analytics></analytics>
