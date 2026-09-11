@@ -1,0 +1,43 @@
+.index {
+  .O_FortuneTellings {
+    .O_BlockOfTarotCards {
+      align-items: end;
+      justify-content: end;
+    }
+  }
+  .O_Footer {
+    margin-top: 0;
+    top: 0;
+  }
+  .M_Header {
+    background: transparent;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1919px) {
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1439px) {
+  /*только смена количества колонок*/
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1023px) {
+  /*только смена количества колонок*/
+}
+
+@media only screen and (min-device-width: 415px) and (max-device-width: 768px) {
+  /* iPad */
+}
+
+@media only screen and (min-device-width: 461px) and (max-device-width: 768px) {
+  /* iPad тут тоже колонки? */
+}
+
+@media only screen and (max-device-width: 460px) {
+  /* Android */
+}

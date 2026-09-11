@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  cursor: url('./images/cursor.svg'), auto;
+  background-color: var(--white);
+  overflow: overlay;
+}
+
+.images {
+  display: flex;
+
+  * {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+  }
+
+  .image {
+    &#bgPNG {
+      background-image: url('images/image.png');
+    }
+
+    &#bgJPG {
+      background-image: url('images/image.jpg');
+    }
+
+    &#bgSVG {
+      background-image: url('images/image.svg');
+    }
+  }
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--black);
+  border-radius: 200px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pink);
+  border-radius: 200px;
+}
+a {
+  text-decoration: none;
+}

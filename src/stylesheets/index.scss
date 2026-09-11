@@ -1,0 +1,32 @@
+body.index {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      180deg,
+      var(--pink) 0%,
+      rgba(255, 139, 236, 0) 12.5%,
+      rgba(255, 139, 236, 0) 100%
+    ),
+    #f5f6ee;
+  font-display: swap;
+}
+
+#canvas {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(
+      85.93% 85.93% at 50% 100%,
+      #292929 0%,
+      rgba(255, 169, 231, 0) 100%
+    ),
+    radial-gradient(
+      52.85% 53.1% at 50% 0%,
+      #343434 0%,
+      rgba(255, 169, 231, 0) 100%
+    ),
+    #ffa9e7;
+  border-radius: 0px 0px 20px 20px;
+}
