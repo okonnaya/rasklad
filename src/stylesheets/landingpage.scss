@@ -2,7 +2,7 @@ body.index {
   background: var(--white);
   overflow: overlay;
   overflow-x: hidden;
-  cursor: url('../images/cursor.svg'), auto;
+  cursor: auto;
   h1 {
     font-size: 550%;
     text-align: center;
@@ -54,7 +54,7 @@ h1 {
   z-index: 0;
 }
 .button12 {
-  cursor: url('../images/pointer.svg'), auto;
+  cursor: pointer;
   transition: 0.5s;
   padding-left: 1vw;
   padding-right: 1vw;
@@ -323,7 +323,7 @@ h1 {
   }
 }
 .buttoncard {
-  cursor: url('../images/pointer.svg'), auto;
+  cursor: pointer;
   transition: 0.4s;
 }
 .buttoncard:hover {

@@ -6,13 +6,13 @@
   color: var(--black);
   line-height: 58px;
   &:hover {
-    cursor: url('./../../images/pointer.svg'), auto;
+    cursor: pointer;
   }
 }
 .W_MenuElementTextBox {
   height: 58px;
   &:hover {
-    cursor: url('./../../images/pointer.svg'), auto;
+    cursor: pointer;
   }
 }
 

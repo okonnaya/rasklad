@@ -180,7 +180,7 @@
       height: 58px;
       &:hover .A_MenuElementText {
         text-shadow: 0px 0px 12px var(--pink);
-        cursor: url('../../images/pointer.svg'), auto;
+        cursor: pointer;
       }
     }
     .W1_MenuElementTextBox {
@@ -269,7 +269,7 @@
       font-size: 24px;
       color: var(--black);
       line-height: 58px;
-      cursor: url('../../images/pointer.svg'), auto;
+      cursor: pointer;
 
       &::placeholder {
         font-family: 'Gramatika Demo';
@@ -284,7 +284,7 @@
       }
     }
     &:hover {
-      cursor: url('../../images/pointer.svg'), auto;
+      cursor: pointer;
     }
   }
   .M_SearchBoxActive {
@@ -295,12 +295,12 @@
     }
   }
   &:hover {
-    cursor: url('../../images/pointer.svg'), auto;
+    cursor: pointer;
   }
 }
 .S_SearchPage {
   &:hover {
-    cursor: url('../../images/pointer.svg'), auto;
+    cursor: pointer;
   }
   .C_SearchOutput {
     width: 100%;

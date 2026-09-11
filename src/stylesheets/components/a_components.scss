@@ -164,7 +164,7 @@
   text-decoration-line: underline;
   &:hover {
     text-shadow: 0px 0px 12.1275px var(--pink);
-    cursor: url('../../images/pointer.svg'), auto;
+    cursor: pointer;
   }
 }
 .A_AccentButtonTarotTellings {
@@ -186,7 +186,7 @@
   margin-bottom: 41vh;
   text-shadow: 0px 0px 22px var(--white);
   &:hover {
-    cursor: url('../../images/pointer.svg'), auto;
+    cursor: pointer;
     transition: all 0.5s ease-out;
     transform: scale(0.95);
     box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.25), inset 0px 4px 10px var(--pink);
@@ -206,7 +206,7 @@
   padding: 27px 20px;
   border-radius: 9px;
   &:hover {
-    cursor: url('../../images/pointer.svg'), auto;
+    cursor: pointer;
     transition: all 0.5s ease-out;
     transform: scale(0.95);
   }
@@ -222,7 +222,7 @@
   padding: 27px 20px;
   border-radius: 9px;
   &:hover {
-    cursor: url('../../images/pointer.svg'), auto;
+    cursor: pointer;
     transition: all 0.5s ease-out;
     transform: scale(0.95);
   }
@@ -245,7 +245,7 @@
 .Category {
   &:hover {
     text-shadow: 0px 0px 12px var(--pink);
-    cursor: url('../../images/pointer.svg'), auto;
+    cursor: pointer;
   }
   &.NotShowing {
     display: none;
@@ -321,7 +321,7 @@
   font-size: 24px;
   color: var(--black);
   line-height: 58px;
-  cursor: url('../../images/pointer.svg'), auto;
+  cursor: pointer;
 
   &::placeholder {
     font-family: 'Gramatika Demo';
