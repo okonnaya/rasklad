@@ -10,8 +10,6 @@ import A_MenuLogo from '../A_MenuLogo/A_MenuLogo.jsx';
 
 import A_MenuMobileToggle from '../A_MenuMobileToggle/A_MenuMobileToggle.jsx';
 
-// const adressPart = ':8080/'
-const adressPart = '.adc.ac/'
 const menu = [
   {
     text: '',
@@ -62,11 +60,6 @@ export default class O_MenuBar extends React.Component {
   //   })
   // }
 
-  // вынести функцию в утилиты
-  getPathFromUrl = (url) => {
-    return url.split(adressPart)[0]
-  }
-
   handleSearchInput = (searchInputValue) => {
     let isSearchButtonDisabled = true
 
@@ -84,10 +77,8 @@ export default class O_MenuBar extends React.Component {
     const { searchInputValue } = this.state
 
     if (searchInputValue.length >= 3) {
-      const url = this.getPathFromUrl(window.location.href)
-
       window.location.href =
-        url + adressPart + 'search.html?request=' + searchInputValue
+        '/search.html?request=' + encodeURIComponent(searchInputValue)
     }
   }
 
@@ -111,7 +102,6 @@ export default class O_MenuBar extends React.Component {
 
   render() {
     const { searchInputValue, current, isToggled } = this.state
-    const url = this.getPathFromUrl(window.location.href)
     const menuElementsclasses = classnames({
       'M_MenuElements': true,
       'Shows': isToggled
@@ -120,7 +110,7 @@ export default class O_MenuBar extends React.Component {
       <div className="O_MenuBar">
         {/* <A_MenuLogo url={menu[0].url}/> */}
         <A_MenuMobileToggle onClick={this.toggleClass}/>
-        <A_MenuLogo url={url + adressPart}/>
+        <A_MenuLogo url="/"/>
         <div className={menuElementsclasses}>
           <A_MenuElement text={menu[1].text} url={menu[1].url} current={current} logo={false} wrapper='W_MenuElement1'/>
           <div className="Q_MenuStar Black"></div>

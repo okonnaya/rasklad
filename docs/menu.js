@@ -1019,9 +1019,6 @@ function O_Menubar_defineProperty(obj, key, value) { if (key in obj) { Object.de
 
 
 
-
-// const adressPart = ':8080/'
-var adressPart = '.adc.ac/';
 var menu = [{
   text: '',
   url: '/index.html'
@@ -1048,9 +1045,6 @@ var O_MenuBar = /*#__PURE__*/function (_React$Component) {
     var _this;
     O_Menubar_classCallCheck(this, O_MenuBar);
     _this = _super.call(this, props);
-    O_Menubar_defineProperty(O_Menubar_assertThisInitialized(_this), "getPathFromUrl", function (url) {
-      return url.split(adressPart)[0];
-    });
     O_Menubar_defineProperty(O_Menubar_assertThisInitialized(_this), "handleSearchInput", function (searchInputValue) {
       var isSearchButtonDisabled = true;
       if (searchInputValue.length >= 3) {
@@ -1064,8 +1058,7 @@ var O_MenuBar = /*#__PURE__*/function (_React$Component) {
     O_Menubar_defineProperty(O_Menubar_assertThisInitialized(_this), "handleSearchSubmit", function () {
       var searchInputValue = _this.state.searchInputValue;
       if (searchInputValue.length >= 3) {
-        var url = _this.getPathFromUrl(window.location.href);
-        window.location.href = url + adressPart + 'search.html?request=' + searchInputValue;
+        window.location.href = '/search.html?request=' + encodeURIComponent(searchInputValue);
       }
     });
     O_Menubar_defineProperty(O_Menubar_assertThisInitialized(_this), "handleFocus", function () {
@@ -1104,8 +1097,6 @@ var O_MenuBar = /*#__PURE__*/function (_React$Component) {
   //   })
   // }
 
-  // вынести функцию в утилиты
-
   // ExtendedSearchBar = () => {
   //   searchBox.classList.add('M_SearchBarActive')
   // }
@@ -1116,7 +1107,6 @@ var O_MenuBar = /*#__PURE__*/function (_React$Component) {
         searchInputValue = _this$state.searchInputValue,
         current = _this$state.current,
         isToggled = _this$state.isToggled;
-      var url = this.getPathFromUrl(window.location.href);
       var menuElementsclasses = classnames_default()({
         'M_MenuElements': true,
         'Shows': isToggled
@@ -1126,7 +1116,7 @@ var O_MenuBar = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react.createElement(A_MenuMobileToggle, {
         onClick: this.toggleClass
       }), /*#__PURE__*/react.createElement(A_MenuLogo, {
-        url: url + adressPart
+        url: "/"
       }), /*#__PURE__*/react.createElement("div", {
         className: menuElementsclasses
       }, /*#__PURE__*/react.createElement(A_MenuElement, {
