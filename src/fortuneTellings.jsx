@@ -1,24 +1,15 @@
-import React from 'react'
-import './airtableData.js'
-import { createRoot } from 'react-dom/client'
 import O_BlockOfTarotCards from './components/O_BlockOfTarotCards/O_BlockOfTarotCards.jsx'
-import { getFortuneTellings, getTarotCards } from './airtableData.js'
+import { getFortuneTellings } from './airtableData.js'
+import { ready, renderInto } from './lib/dom.js'
 
-  let tellings
-
-  document.addEventListener('DOMContentLoaded', () => {
-    getFortuneTellings().then((data) => {
-      tellings = data
-      const root = createRoot(document.querySelector('.W_FortuneTellings'))
-      const requiredTellings = []
-      tellings.forEach(telling => {
-        if (telling.id === 'fortuneTelling3'){
-          requiredTellings.push(telling)
-        }
-      });
-  root.render(
+ready(async () => {
+  const data = await getFortuneTellings()
+  renderInto(
+    '.W_FortuneTellings',
     <div>
-    <O_BlockOfTarotCards data={requiredTellings} />
-    </div>)
-    })  
-  })
+      <O_BlockOfTarotCards
+        data={data.filter((item) => item.id === 'fortuneTelling3')}
+      />
+    </div>
+  )
+})

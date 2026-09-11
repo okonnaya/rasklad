@@ -148,71 +148,29 @@
     }
   }
 }
-@media only screen and (min-width: 500px) and (max-width: 767px) {
-  /*только смена количества колонок*/
+@media only screen and (max-width: 767px) {
   .O_MenuBar {
-    background: linear-gradient(
-      180deg,
-      #ff8bec 18.05%,
-      #ffcef7 64.16%,
-      rgba(255, 255, 255, 0) 99.69%
-    );
+    background: linear-gradient(180deg, #ffaef2, rgba(255, 255, 255, 0));
     flex-direction: column;
     align-items: center;
-    left: 0vw;
+    left: 0;
     gap: 10px;
-    width: 100vw;
-    height: fit-content;
-    .M_MenuElements {
-      flex-direction: column;
-      height: fit-content;
-      width: 90vw;
-      &.NotShowing {
-        display: none;
-      }
-      .Q_MenuStar {
-        display: none;
-      }
-      .W_MenuElementTextBox,
-      .W_MenuElement1,
-      .W_MenuElement2,
-      .W_MenuElement3,
-      .W_MenuElement4,
-      .W_MenuElement5 {
-        height: fit-content;
-      }
+    height: 60px;
+    width: 100%;
+    &.Expanded {
+      height: auto;
+      max-height: 100dvh;
+      overflow-y: auto;
+      padding: 65px 0 14px;
+      background: linear-gradient(180deg, #ffaef2, var(--white) 70%);
     }
-  }
-}
-@media only screen and (max-device-width: 767px) {
-  .O_MenuBar {
-    background: linear-gradient(
-      180deg,
-      #ffaef2 18.05%,
-      #ffdffa 64.16%,
-      rgba(255, 255, 255, 0) 99.69%
-    );
-    flex-direction: column;
-    align-items: center;
-    left: 0vw;
-    gap: 10px;
-    height: 100px;
-    width: 100vw;
-    // height: fit-content;
-    transition: all 1s ease-out;
     .M_MenuElements {
+      display: none;
       flex-direction: column;
-      height: fit-content;
-      width: 90vw;
-      top: -80vw;
-      position: relative;
-      transition: all 1s ease-out;
-
-      &.NotShowing {
-        display: none;
-      }
+      height: auto;
+      width: 90%;
       &.Shows {
-        top: 65px;
+        display: flex;
       }
       .Q_MenuStar {
         display: none;

@@ -6,3 +6,5 @@
 @import 'stylesheets/components/m_components.scss';
 @import 'stylesheets/components/o_components.scss';
 @import 'stylesheets/components/so_components.scss';
+
+.M_Search .Q_SearchIcon { border: 0; padding: 0; background-color: transparent; cursor: pointer; }

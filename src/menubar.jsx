@@ -1,11 +1,4 @@
-import React from 'react'
-import './airtableData.js'
-import { createRoot } from 'react-dom/client'
-import O_MenuBar from './components/O_MenuBar/O_Menubar.jsx'
+import O_MenuBar from './components/O_MenuBar/O_MenuBar.jsx'
+import { ready, renderInto } from './lib/dom.js'
 
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    const root = createRoot(document.querySelector('.W_Menu'))
-    root.render(<O_MenuBar/>)
-})
+ready(() => renderInto('.W_Menu', <O_MenuBar />))

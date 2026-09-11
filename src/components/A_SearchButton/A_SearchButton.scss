@@ -1,4 +1,8 @@
 .A_SearchButton {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
   background-image: url('./../../images/Q_SearchIcon.svg');
   width: 22px;
   height: 24px;
@@ -34,7 +38,7 @@
     height: 14px;
   }
 }
-@media only screen and (max-device-width: 499px) {
+@media only screen and (max-width: 499px) {
   .A_SearchButton {
     width: 12.25px;
     height: 14px;

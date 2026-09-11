@@ -2,7 +2,7 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>гадания | расклад</title>
+    <title>поиск | расклад</title>
     <!-- Primary Meta Tags -->
     <meta name="title" content="(рас)клад — медиа о таро" />
     <meta
@@ -45,7 +45,6 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="javascript/solitaireVictory.js" charset="utf-8"></script>
   </head>
   <body class="S_SearchPage">
     <menu></menu>
@@ -59,8 +58,8 @@
       </div>
     </div>
     <div class="M_Search">
-      <input class="A_SearchInput" type="text" placeholder="поиск" />
-      <div class="Q_SearchIcon disabled"></div>
+      <input class="A_SearchInput" aria-label="Поиск по сайту" type="search" placeholder="поиск" />
+      <button type="button" class="Q_SearchIcon disabled" aria-label="Найти" disabled></button>
     </div>
     <div class="C_SearchOutput">
       <div class="M_NothingFound">

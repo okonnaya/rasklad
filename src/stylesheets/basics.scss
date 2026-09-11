@@ -10,7 +10,7 @@ body {
 body {
   font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
   font-weight: 400;
-  cursor: url('./images/cursor.svg'), auto;
+  cursor: url('../images/cursor.svg'), auto;
   background-color: var(--white);
   overflow: overlay;
 }
@@ -26,15 +26,15 @@ body {
 
   .image {
     &#bgPNG {
-      background-image: url('images/image.png');
+      background-image: url('../images/image.png');
     }
 
     &#bgJPG {
-      background-image: url('images/image.jpg');
+      background-image: url('../images/image.jpg');
     }
 
     &#bgSVG {
-      background-image: url('images/image.svg');
+      background-image: url('../images/image.svg');
     }
   }
 }

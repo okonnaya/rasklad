@@ -180,7 +180,7 @@
       height: 58px;
       &:hover .A_MenuElementText {
         text-shadow: 0px 0px 12px var(--pink);
-        cursor: url('./images/pointer.svg'), auto;
+        cursor: url('../../images/pointer.svg'), auto;
       }
     }
     .W1_MenuElementTextBox {
@@ -252,7 +252,7 @@
       }
     }
     .Q_SearchIcon {
-      background-image: url('./images/Q_SearchIcon.svg');
+      background-image: url('../../images/Q_SearchIcon.svg');
       width: 22px;
       height: 24px;
       background-size: contain;
@@ -269,7 +269,7 @@
       font-size: 24px;
       color: var(--black);
       line-height: 58px;
-      cursor: url('./images/pointer.svg'), auto;
+      cursor: url('../../images/pointer.svg'), auto;
 
       &::placeholder {
         font-family: 'Gramatika Demo';
@@ -284,7 +284,7 @@
       }
     }
     &:hover {
-      cursor: url('./images/pointer.svg'), auto;
+      cursor: url('../../images/pointer.svg'), auto;
     }
   }
   .M_SearchBoxActive {
@@ -295,12 +295,12 @@
     }
   }
   &:hover {
-    cursor: url('./images/pointer.svg'), auto;
+    cursor: url('../../images/pointer.svg'), auto;
   }
 }
 .S_SearchPage {
   &:hover {
-    cursor: url('./images/pointer.svg'), auto;
+    cursor: url('../../images/pointer.svg'), auto;
   }
   .C_SearchOutput {
     width: 100%;
@@ -1742,7 +1742,7 @@
     }
   }
 }
-@media only screen and (max-device-width: 499px) {
+@media only screen and (max-width: 499px) {
   .O_Section4 {
     padding: 60px 0 120px;
     border-radius: 8px;

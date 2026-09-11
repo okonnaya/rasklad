@@ -1,12 +1,12 @@
-import React from 'react';
-import './A_TarotCardImage.scss';
-
-export default class A_TarotCardImage extends React.Component {
-    render() {
-        const { image: imageName } = this.props;
-
-        return (
-            <img src={require(`../../data/${imageName}`)} className='A_TarotCardImage'/>
-        );
-    }
+import './A_TarotCardImage.scss'
+export default function A_TarotCardImage({ image, alt = '' }) {
+  return (
+    <img
+      src={image}
+      className="A_TarotCardImage"
+      alt={alt}
+      loading="lazy"
+      decoding="async"
+    />
+  )
 }

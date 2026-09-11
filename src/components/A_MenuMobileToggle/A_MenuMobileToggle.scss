@@ -1,4 +1,8 @@
 .A_MenuMobileToggle {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
   display: none;
 }
 @media only screen and (min-width: 1440px) and (max-width: 1919px) {
@@ -12,7 +16,7 @@
 }
 @media only screen and (min-width: 500px) and (max-width: 767px) {
 }
-@media only screen and (max-device-width: 767px) {
+@media only screen and (max-width: 767px) {
   .A_MenuMobileToggle {
     top: 21px;
     right: 24px;

@@ -1,26 +1,25 @@
-import React from 'react';
+import React from 'react'
 import './A_MenuElement.scss'
 import classnames from 'classnames'
 
 export default class A_MenuElement extends React.Component {
-    render() {
+  render() {
+    const { text, url, wrapper } = this.props
 
-        const { text, url, current, wrapper } = this.props
-    
-        const classes = classnames({
-          A_MenuElement: true,
-        })
+    const classes = classnames({
+      A_MenuElement: true
+    })
 
-        const wrapperClasses = classnames({
-          [`${wrapper}`]: true,
-        })
-    
-        return (
-          <div className={wrapperClasses}>
-            <a className={classes} href={url}>
-              {text}
-            </a>
-          </div>
-        )
-    }
+    const wrapperClasses = classnames({
+      [`${wrapper}`]: true
+    })
+
+    return (
+      <div className={wrapperClasses}>
+        <a className={classes} href={url}>
+          {text}
+        </a>
+      </div>
+    )
   }
+}

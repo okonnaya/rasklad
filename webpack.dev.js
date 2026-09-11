@@ -1,15 +1,12 @@
+const path = require('node:path')
 const { merge } = require('webpack-merge')
 const common = require('./webpack.common.js')
-const path = require('path')
-
 module.exports = merge(common, {
   mode: 'development',
-  devtool: 'inline-source-map',
-  watch: true,
-  devServer: {
-    static: './dev_build'
-  },
+  devtool: 'eval-cheap-module-source-map',
+  devServer: { host: '127.0.0.1', port: 8080, static: false, hot: true },
   output: {
-    path: path.resolve(__dirname, 'dev_build')
+    path: path.resolve(__dirname, 'dev_build'),
+    filename: 'assets/[name].js'
   }
 })

@@ -136,7 +136,7 @@ body {
   font-family: 'Steinbeck Demo';
 }
 .logo {
-  background-image: url('images/logo.svg');
+  background-image: url('../images/logo.svg');
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
@@ -236,7 +236,7 @@ body {
   flex-direction: column;
 }
 .card__front {
-  background-image: url('images/cardtransition1.png');
+  background-image: url('../images/cardtransition1.png');
   background-size: contain;
   background-repeat: no-repeat;
   filter: drop-shadow(0px 20px 53px rgba(245, 120, 225, 0.14));
@@ -255,14 +255,14 @@ body {
 
 .card__back {
   transform: rotateY(0.5turn);
-  background-image: url('images/cardtransition2.png');
+  background-image: url('../images/cardtransition2.png');
   background-size: contain;
   background-repeat: no-repeat;
   filter: drop-shadow(0px 0px 34px #e2e2db) drop-shadow(0px 0px 34px #e2e2db)
     drop-shadow(0px 0px 34px #e2e2db);
 }
 .shadow {
-  background-image: url('images/shadow.svg');
+  background-image: url('../images/shadow.svg');
   width: 21vw;
   height: 20vw;
   background-repeat: no-repeat;
@@ -313,13 +313,13 @@ body {
   height: 66.66666vh;
 }
 .card1 {
-  background-image: url('images/card1.png');
+  background-image: url('../images/card1.png');
 }
 .card2 {
-  background-image: url('images/card3.png');
+  background-image: url('../images/card3.png');
 }
 .card3 {
-  background-image: url('images/card2.png');
+  background-image: url('../images/card2.png');
 }
 .card1,
 .card2,
@@ -389,7 +389,7 @@ body {
 }
 .arrowleft {
   margin-top: 2vh;
-  background-image: url('images/arrow.svg');
+  background-image: url('../images/arrow.svg');
   width: 19vw;
   height: 20vh;
   right: 10vw;
@@ -401,7 +401,7 @@ body {
   text-align: right;
 }
 .arrowright {
-  background-image: url('images/arrow.svg');
+  background-image: url('../images/arrow.svg');
   transform: rotate(180deg);
   width: 19vw;
   height: 20vh;

@@ -1,47 +1,31 @@
-console.log('cardoftheday')
-import React from 'react'
 import './fool.css'
 import { getTarotCards } from './airtableData.js'
-import { createRoot } from 'react-dom/client'
 import O_TarotCardInfo_CardOfTheDay from './components/O_TarotCardInfo_CardOfTheDay/O_TarotCardInfo_CardOfTheDay.jsx'
-import O_MoreFortuneTellings from './components/O_MoreFortuneTellings/O_MoreFortuneTellings.jsx'
+import { sample } from './lib/content.cjs'
+import { ready, renderInto } from './lib/dom.js'
 
-
-
-document.addEventListener('DOMContentLoaded', () => {
-const AccentBottom = document.querySelector('.A_AccentButtonTarotTellings')
-  const FortuneTelling = document.querySelector('.O_ContentFortuneTelling')
-AccentBottom.addEventListener('click', () => {
-        AccentBottom.classList.toggle('NotShowing')
-        FortuneTelling.classList.toggle('NotShowing')
+ready(async () => {
+  const button = document.querySelector('.A_AccentButtonTarotTellings')
+  const result = document.querySelector('.O_ContentFortuneTelling')
+  if (!button || !result) return
+  const [card] = sample(await getTarotCards(), 1)
+  if (!card) return
+  renderInto(
+    '.CardContainer_CardOfTheDay',
+    <O_TarotCardInfo_CardOfTheDay tarotCard={card} {...card} />
+  )
+  button.addEventListener(
+    'click',
+    () => {
+      button.classList.add('NotShowing')
+      result.classList.remove('NotShowing')
+      if (typeof window.gtag === 'function') {
         window.gtag('event', 'Click', {
           event_category: 'Button',
-          event_label: 'CardOfTheDay',
-        });
-      })
-
-  getTarotCards().then((data) => {
-    let allTarotCards = data
-    let requiredCard
-
-    const randomIndex = Math.floor(Math.random() * allTarotCards.length);
-    requiredCard = allTarotCards[randomIndex]
-    console.log(requiredCard)
-
-    // allTarotCards.forEach((tarotCard) => {
-    //   if (tarotCard.htmlname == name){
-    //     requiredCard = tarotCard
-    //     console.log(requiredCard);
-    //   }
-    // })
-    const root = createRoot(document.querySelector('.CardContainer_CardOfTheDay'))
-    root.render(
-      <O_TarotCardInfo_CardOfTheDay
-        tarotCard={requiredCard}
-        name={requiredCard.name}
-        basics={requiredCard.basics} 
-        cardOfTheDay={requiredCard.cardOfTheDay}
-        advice={requiredCard.advice}/>
-      )
-  })
+          event_label: 'CardOfTheDay'
+        })
+      }
+    },
+    { once: true }
+  )
 })

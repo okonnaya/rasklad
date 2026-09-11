@@ -1,0 +1,487 @@
+{
+  "about.html": {
+    "bytes": 226826,
+    "gzip": 72434,
+    "scripts": 5
+  },
+  "articles.html": {
+    "bytes": 226516,
+    "gzip": 72245,
+    "scripts": 4
+  },
+  "cardoftheday.html": {
+    "bytes": 0,
+    "gzip": 0,
+    "scripts": 0
+  },
+  "cards.html": {
+    "bytes": 260124,
+    "gzip": 80079,
+    "scripts": 6
+  },
+  "fortunetellings.html": {
+    "bytes": 259578,
+    "gzip": 79759,
+    "scripts": 6
+  },
+  "index.html": {
+    "bytes": 261052,
+    "gzip": 80351,
+    "scripts": 6
+  },
+  "platform.html": {
+    "bytes": 225905,
+    "gzip": 71844,
+    "scripts": 3
+  },
+  "search.html": {
+    "bytes": 261145,
+    "gzip": 80237,
+    "scripts": 5
+  },
+  "styleguide.html": {
+    "bytes": 226067,
+    "gzip": 71984,
+    "scripts": 4
+  },
+  "articles/article.html": {
+    "bytes": 0,
+    "gzip": 0,
+    "scripts": 0
+  },
+  "articles/foursInTarot.html": {
+    "bytes": 226516,
+    "gzip": 72245,
+    "scripts": 4
+  },
+  "articles/waiteTarot.html": {
+    "bytes": 226516,
+    "gzip": 72245,
+    "scripts": 4
+  },
+  "articles/yourFirstTarotCards.html": {
+    "bytes": 226516,
+    "gzip": 72245,
+    "scripts": 4
+  },
+  "articlescompilations/lovecompilation.html": {
+    "bytes": 226516,
+    "gzip": 72245,
+    "scripts": 4
+  },
+  "cards/aceOfCups.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/aceOfPentacles.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/aceOfSwords.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/bashnya.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/chariot.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/cups10.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/cups2.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/cups3.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/cups4.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/cups5.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/cups6.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/cups7.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/cups8.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/cups9.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/cupsKnight.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/death.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/emperor.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/empress.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/fool.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/hermit.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/judgement.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/justice.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/kingOfCups.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/kingOfPentacles.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/kingOfSwords.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/kingOfWands.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/knightOfPentacles.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/knightOfSwords.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/knightOfWands.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/lovers.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/moon.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/pageCups.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/pageOfPentacles.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/pageOfSwords.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/pageOfWands.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/pentacles10.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/pentacles2.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/pentacles3.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/pentacles4.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/pentacles5.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/pentacles6.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/pentacles7.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/pentacles8.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/pentacles9.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/priest.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/priestess.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/queenOfCups.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/queenOfPentacles.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/queenOfSwords.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/queenOfWands.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/star.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/strength.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/sun.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/swords10.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/swords2.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/swords3.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/swords4.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/swords5.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/swords6.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/swords7.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/swords8.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/swords9.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/temperance.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/theDevil.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/theHangedMan.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/theMagician.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/wands10.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/wands2.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/wands3.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/wands4.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/wands5.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/wands6.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/wands7.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/wands8.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/wands9.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/wandsAce.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/wheelOfFortune.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "cards/world.html": {
+    "bytes": 261330,
+    "gzip": 80295,
+    "scripts": 5
+  },
+  "fortunetellings/cardoftheday.html": {
+    "bytes": 261240,
+    "gzip": 80439,
+    "scripts": 6
+  },
+  "fortunetellings/family.html": {
+    "bytes": 261400,
+    "gzip": 80341,
+    "scripts": 6
+  },
+  "fortunetellings/future.html": {
+    "bytes": 261400,
+    "gzip": 80341,
+    "scripts": 6
+  },
+  "fortunetellings/love.html": {
+    "bytes": 261400,
+    "gzip": 80341,
+    "scripts": 6
+  },
+  "pages/page.html": {
+    "bytes": 226406,
+    "gzip": 72191,
+    "scripts": 4
+  }
+}

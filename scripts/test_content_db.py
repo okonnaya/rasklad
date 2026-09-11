@@ -32,6 +32,20 @@ class ContentDatabaseTests(unittest.TestCase):
             content.save(self.db, invalid, 'invalid')
         self.assertEqual(content.read(self.db), self.rows)
 
+    def test_browser_catalogue_keeps_search_fields_without_long_readings(self):
+        destination = Path(self.directory.name)
+        for rows in self.rows.values():
+            for row in rows:
+                (destination / row['image']).touch()
+        content.export(self.db, destination)
+        catalogue = json.loads((destination / 'tarotCatalog.json').read_text())
+        self.assertEqual([row['id'] for row in catalogue],
+                         [row['id'] for row in self.rows['tarotCards']])
+        self.assertTrue(all('name' in row and 'image' in row for row in catalogue))
+        self.assertTrue(all('basicMeaning' not in row for row in catalogue))
+        self.assertEqual(json.loads((destination / 'tarotCards.json').read_text()),
+                         self.rows['tarotCards'])
+
     def test_rejected_airtable_token_keeps_existing_data(self):
         error = urllib.error.HTTPError('https://api.airtable.com', 401, 'Unauthorized', {}, None)
         with patch.object(content, 'credentials', return_value=('test', 'test')):

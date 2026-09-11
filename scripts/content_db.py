@@ -77,6 +77,17 @@ def export(db, destination):
         temporary.write_text(encode(rows) + '\n')
         temporary.replace(target)
 
+    # Lists and search need card labels, not every long interpretation.
+    fields = ('id', 'htmlname', 'arcana', 'color', 'emoji', 'line1', 'line2',
+              'none', 'image', 'texttype', 'name', 'similarWords')
+    catalogue = [{key: row[key] for key in fields if key in row}
+                 for row in collections['tarotCards']]
+    target = destination / 'tarotCatalog.json'
+    if not target.exists() or json.loads(target.read_text()) != catalogue:
+        temporary = target.with_suffix('.json.tmp')
+        temporary.write_text(encode(catalogue) + '\n')
+        temporary.replace(target)
+
 
 def credentials():
     config = {}

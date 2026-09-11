@@ -1,32 +1,29 @@
+// The browser reads exported SQLite content; no Airtable request is made here.
 import articles from './data/articles.json'
 import fortuneTellings from './data/fortuneTellings.json'
-import tarotCards from './data/tarotCards.json'
+import tarotCatalog from './data/tarotCatalog.json'
+import { contentLink } from './lib/content.cjs'
 
-// Функция для получения статей
-export function getArticles() {
-  return new Promise((resolve) => {
-    resolve(articles)
-  })
-}
+// Restrict the asset context to images, excluding all content JSON files.
+const images = require.context('./data', false, /\.(png|jpe?g|gif|webp|svg)$/i)
+const prepare = (items) =>
+  items.map((item) => ({
+    ...item,
+    link: contentLink(item),
+    image: images(`./${item.image}`),
+    color: item.color || 'pink',
+    texttype: item.texttype || 'Emoji'
+  }))
 
-// Функция для получения предсказаний
-export function getFortuneTellings() {
-  return new Promise((resolve) => {
-    resolve(fortuneTellings)
-  })
+export const getArticles = () => Promise.resolve(prepare(articles))
+export const getFortuneTellings = () =>
+  Promise.resolve(prepare(fortuneTellings))
+export const getTarotCatalog = () => Promise.resolve(prepare(tarotCatalog))
+export const getTarotCards = async () => {
+  const { default: tarotCards } = await import('./data/tarotCards.json')
+  return prepare(tarotCards)
 }
-
-// Функция для получения карт Таро
-export function getTarotCards() {
-  return new Promise((resolve) => {
-    resolve(tarotCards)
-  })
-}
-
-// Функция для поиска данных
-export function getSearchData() {
-  return new Promise((resolve) => {
-    const searchData = [...articles, ...fortuneTellings, ...tarotCards] // Или какой-то другой способ объединения данных
-    resolve(searchData)
-  })
-}
+export const getSearchData = async () =>
+  (
+    await Promise.all([getArticles(), getFortuneTellings(), getTarotCatalog()])
+  ).flat()

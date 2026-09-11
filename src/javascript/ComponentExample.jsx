@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
+import { Component } from 'react'
 
 export default class ComponentExample extends Component {
   constructor(props) {
