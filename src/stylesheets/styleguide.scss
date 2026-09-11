@@ -28,7 +28,7 @@ body {
 .c_c4 {
   width: 100vw;
   margin-top: 10vh;
-  border-radius: 20px;
+  border-radius: var(--radius-section);
   background-color: var(--black);
   height: 150vh;
   display: flex;

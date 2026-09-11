@@ -175,7 +175,7 @@
   left: calc((100% - 352px) / 2);
   background: var(--black);
   box-shadow: 0px 6px 9px var(--blackshadow), inset 0px 4px 10px var(--white);
-  border-radius: 14px;
+  border-radius: var(--radius-control);
   font-family: 'Wremena';
   font-style: normal;
   font-weight: 300;
@@ -204,7 +204,7 @@
   color: var(--white);
   background-color: var(--black);
   padding: 27px 20px;
-  border-radius: 9px;
+  border-radius: var(--radius-control);
   &:hover {
     cursor: pointer;
     transition: all 0.5s ease-out;
@@ -220,7 +220,7 @@
   color: var(--white);
   background-color: var(--black);
   padding: 27px 20px;
-  border-radius: 9px;
+  border-radius: var(--radius-control);
   &:hover {
     cursor: pointer;
     transition: all 0.5s ease-out;
@@ -254,7 +254,7 @@
 .A_CardArticleImage {
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 14px;
+  border-radius: var(--radius-control);
   overflow: hidden;
   .Q_CardArticlesImageGradient {
     position: absolute;
@@ -285,7 +285,7 @@
   position: relative;
   width: 1208px;
   height: 640px;
-  border-radius: 22px;
+  border-radius: var(--radius-section);
   overflow: hidden;
   .Q_Gradient {
     position: absolute;
@@ -401,14 +401,14 @@
     width: 253px;
     height: 78px;
     left: calc((100% - 253px) / 2);
-    border-radius: 9px;
+    border-radius: var(--radius-control);
     font-size: 46px;
     line-height: 62px;
   }
   .A_ArticleButton {
     font-size: 38px;
     padding: 20px 18px;
-    border-radius: 9px;
+    border-radius: var(--radius-control);
   }
   .A_paragraphHeader {
     font-size: 20px;
@@ -417,12 +417,12 @@
     top: -70px;
   }
   .A_CardArticleImage {
-    border-radius: 11px;
+    border-radius: var(--radius-control);
   }
   .A_ImageWithGradient {
     width: 895px;
     height: 470px;
-    border-radius: 12px;
+    border-radius: var(--radius-control);
   }
   .A_SearchInput {
     height: 47px;
@@ -484,14 +484,14 @@
     width: 231px;
     height: 73px;
     left: calc((100% - 231px) / 2);
-    border-radius: 9px;
+    border-radius: var(--radius-control);
     font-size: 42px;
     line-height: 57px;
   }
   .A_ArticleButton {
     font-size: 36px;
     padding: 18px 14px;
-    border-radius: 6px;
+    border-radius: var(--radius-control);
   }
   .A_paragraphHeader {
     font-size: 18px;
@@ -506,12 +506,12 @@
     font-size: 18px;
   }
   .A_CardArticleImage {
-    border-radius: 10px;
+    border-radius: var(--radius-control);
   }
   .A_ImageWithGradient {
     width: 794px;
     height: 420px;
-    border-radius: 12px;
+    border-radius: var(--radius-control);
   }
   .A_SearchInput {
     height: 43px;
@@ -580,7 +580,7 @@
     width: 188px;
     height: 60px;
     left: calc((100% - 188px) / 2);
-    border-radius: 8px;
+    border-radius: var(--radius-control);
     font-size: 34px;
     line-height: 46px;
     margin-bottom: 60vh;
@@ -588,7 +588,7 @@
   .A_ArticleButton {
     font-size: 32px;
     padding: 7px 9px;
-    border-radius: 4px;
+    border-radius: var(--radius-control);
   }
   .A_paragraphHeader {
     font-size: 14px;
@@ -597,12 +597,12 @@
     top: -70px;
   }
   .A_CardArticleImage {
-    border-radius: 8px;
+    border-radius: var(--radius-small);
   }
   .A_ImageWithGradient {
     width: 695px;
     height: 370px;
-    border-radius: 12px;
+    border-radius: var(--radius-control);
   }
   .A_SearchInput {
     height: 34px;
@@ -634,7 +634,7 @@
   .A_ImageWithGradient {
     width: 458px;
     height: 244px;
-    border-radius: 8px;
+    border-radius: var(--radius-small);
   }
   .A_SearchInput {
     width: 420px;
@@ -694,14 +694,14 @@
     width: 188px;
     height: 60px;
     left: calc((100% - 188px) / 2);
-    border-radius: 8px;
+    border-radius: var(--radius-control);
     font-size: 34px;
     line-height: 46px;
   }
   .A_ArticleButton {
     font-size: 24px;
     padding: 8px 9px;
-    border-radius: 4px;
+    border-radius: var(--radius-control);
   }
   .A_paragraphHeader {
     font-size: 14px;
@@ -710,12 +710,12 @@
     top: -70px;
   }
   .A_CardArticleImage {
-    border-radius: 8px;
+    border-radius: var(--radius-small);
   }
   .A_ImageWithGradient {
     width: 328px;
     height: 180px;
-    border-radius: 8px;
+    border-radius: var(--radius-small);
   }
   .A_SearchInput {
     height: 34px;

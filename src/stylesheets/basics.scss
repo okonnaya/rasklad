@@ -48,12 +48,12 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: var(--black);
-  border-radius: 200px;
+  border-radius: var(--radius-pill);
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--pink);
-  border-radius: 200px;
+  border-radius: var(--radius-pill);
 }
 a {
   text-decoration: none;

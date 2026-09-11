@@ -44,7 +44,7 @@
   flex-direction: column;
   align-items: center;
   gap: 90px;
-  border-radius: 22px;
+  border-radius: var(--radius-card);
   box-shadow: 0px 6px 9px var(--blackshadow);
   background: radial-gradient(
       98.45% 57.5% at 52.94% -0.07%,
@@ -101,7 +101,7 @@
   height: 480px;
   background-color: var(--white);
   box-shadow: 0px 6px 9px var(--blackshadow), inset 0px 4px 10px var(--white);
-  border-radius: 22px;
+  border-radius: var(--radius-card);
   &:hover {
     cursor: pointer;
     transition: all 0.5s ease-out;
@@ -139,7 +139,7 @@
   padding: 36px 21px;
   background-color: var(--white);
   box-shadow: 0px 6px 9px var(--blackshadow), inset 0px 4px 10px var(--white);
-  border-radius: 22px;
+  border-radius: var(--radius-card);
   &:hover {
     cursor: pointer;
     transition: all 0.5s ease-out;
@@ -175,7 +175,7 @@
   width: 428px;
   height: 480px;
   padding-top: 60px;
-  border-radius: 22px;
+  border-radius: var(--radius-card);
   &:hover {
     cursor: pointer;
     transition: all 0.5s ease-out;
@@ -205,7 +205,7 @@
       rgba(255, 139, 236, 0) 100%
     ),
     #f8f6f0;
-  border-radius: 22px;
+  border-radius: var(--radius-card);
   box-shadow: 0px 6px 9px var(--blackshadow);
   box-shadow: inset 0px 6px 12px #f8f6f0;
   box-shadow: 0px 6px 9px var(--blackshadow);
@@ -256,7 +256,7 @@
   text-align: center;
   width: 896px;
   height: 916px;
-  border-radius: 22px;
+  border-radius: var(--radius-card);
   background: radial-gradient(
       216.06% 132.81% at 50% -32.81%,
       #313131 0%,
@@ -385,7 +385,7 @@
   height: 58px;
   background: var(--white);
   box-shadow: 0px 6px 9px var(--blackshadow);
-  border-radius: 14px;
+  border-radius: var(--radius-control);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -492,7 +492,7 @@
     width: 335px;
     height: 510px;
     gap: 80px;
-    border-radius: 16px;
+    border-radius: var(--radius-card);
     .W_TarotCardHighilight {
       .W_TarotCardInside {
         top: 40px;
@@ -523,7 +523,7 @@
     width: 320px;
     height: 370px;
     box-shadow: 0px 5px 9px var(--blackshadow), inset 0px 4px 10px var(--white);
-    border-radius: 16px;
+    border-radius: var(--radius-card);
     .A_CardArticleImage {
       width: 290px;
       height: 190px;
@@ -548,7 +548,7 @@
   .M_ArticleCardBig {
     width: 665px;
     height: 680px;
-    border-radius: 16px;
+    border-radius: var(--radius-card);
     .W_TarotCardShadow {
       filter: drop-shadow(0px 5px 9px var(--blackshadow));
     }
@@ -573,7 +573,7 @@
   .M_TarotCardWide {
     width: 435px;
     height: 298px;
-    border-radius: 16px;
+    border-radius: var(--radius-card);
     box-shadow: 0px 5px 9px var(--blackshadow);
     box-shadow: inset 0px 5px 12px #f8f6f0;
     box-shadow: 0px 5px 9px var(--blackshadow);
@@ -614,7 +614,7 @@
     height: 410px;
     padding: 22px 19px;
     box-shadow: 0px 5px 9px var(--blackshadow), inset 0px 4px 10px var(--white);
-    border-radius: 16px;
+    border-radius: var(--radius-card);
     .A_CardArticleImage {
       width: 610px;
       height: 190px;
@@ -660,7 +660,7 @@
   .M_Search {
     width: 665px;
     height: 47px;
-    border-radius: 12px;
+    border-radius: var(--radius-control);
     padding: 0 13px;
     font-size: 20px;
     line-height: 47px;
@@ -701,7 +701,7 @@
     width: 284px;
     height: 430px;
     gap: 70px;
-    border-radius: 14px;
+    border-radius: var(--radius-card);
     .W_TarotCardHighilight {
       .W_TarotCardInside {
         top: 35px;
@@ -733,7 +733,7 @@
     width: 284px;
     height: 320px;
     box-shadow: 0px 4px 9px var(--blackshadow), inset 0px 4px 10px var(--white);
-    border-radius: 14px;
+    border-radius: var(--radius-card);
     .A_CardArticleImage {
       width: 256px;
       height: 168px;
@@ -758,7 +758,7 @@
   .M_ArticleCardBig {
     width: 590px;
     height: 605px;
-    border-radius: 14px;
+    border-radius: var(--radius-card);
     .W_TarotCardShadow {
       filter: drop-shadow(0px 4px 9px var(--blackshadow));
     }
@@ -783,7 +783,7 @@
   .M_TarotCardWide {
     width: 406px;
     height: 278px;
-    border-radius: 16px;
+    border-radius: var(--radius-card);
     box-shadow: 0px 4px 9px var(--blackshadow);
     box-shadow: inset 0px 4px 12px #f8f6f0;
     box-shadow: 0px 4px 9px var(--blackshadow);
@@ -817,7 +817,7 @@
     height: 380px;
     padding: 20px 16px;
     box-shadow: 0px 5px 9px var(--blackshadow), inset 0px 4px 10px var(--white);
-    border-radius: 14px;
+    border-radius: var(--radius-card);
     .A_CardArticleImage {
       width: 580px;
       height: 180px;
@@ -864,7 +864,7 @@
   .M_Search {
     width: 590px;
     height: 43px;
-    border-radius: 11px;
+    border-radius: var(--radius-control);
     padding: 0 10px;
     font-size: 18px;
     line-height: 43px;
@@ -997,7 +997,7 @@
     width: 215px;
     height: 250px;
     box-shadow: 0px 3px 9px var(--blackshadow), inset 0px 4px 10px var(--white);
-    border-radius: 10px;
+    border-radius: var(--radius-card);
     .A_CardArticleImage {
       width: 198px;
       height: 131px;
@@ -1022,7 +1022,7 @@
   .M_ArticleCardBig {
     width: 455px;
     height: 465px;
-    border-radius: 14px;
+    border-radius: var(--radius-card);
     box-shadow: 0px 4px 9px var(--blackshadow);
     box-shadow: inset 0px 3px 12px #f8f6f0;
     box-shadow: 0px 4px 9px var(--blackshadow);
@@ -1050,7 +1050,7 @@
   .M_TarotCardWide {
     width: 406px;
     height: 278px;
-    border-radius: 16px;
+    border-radius: var(--radius-card);
     box-shadow: 0px 4px 9px var(--blackshadow);
     box-shadow: inset 0px 4px 12px #f8f6f0;
     box-shadow: 0px 4px 9px var(--blackshadow);
@@ -1084,7 +1084,7 @@
     height: 250px;
     padding: 14px;
     box-shadow: 0px 4px 9px var(--blackshadow), inset 0px 4px 10px var(--white);
-    border-radius: 10px;
+    border-radius: var(--radius-card);
     .A_CardArticleImage {
       width: 270px;
       height: 110px;
@@ -1134,7 +1134,7 @@
   .M_Search {
     width: 590px;
     height: 34px;
-    border-radius: 10px;
+    border-radius: var(--radius-control);
     padding: 0 8px;
     font-size: 14px;
     line-height: 34px;
@@ -1161,7 +1161,7 @@
     width: 335px;
     height: 510px;
     gap: 70px;
-    border-radius: 10px;
+    border-radius: var(--radius-card);
     .W_TarotCardHighilight {
       .W_TarotCardInside {
         top: 35px;
@@ -1212,7 +1212,7 @@
   .M_Search {
     width: 455px;
     height: 34px;
-    border-radius: 10px;
+    border-radius: var(--radius-control);
     padding: 0 8px;
     font-size: 14px;
     line-height: 34px;
@@ -1261,7 +1261,7 @@
     width: 240px;
     height: 365px;
     gap: 70px;
-    border-radius: 8px;
+    border-radius: var(--radius-card);
     .W_TarotCardHighilight {
       .W_TarotCardInside {
         top: 30px;
@@ -1337,7 +1337,7 @@
     width: 328px;
     height: 335px;
     box-shadow: 0px 5px 9px var(--blackshadow), inset 0px 4px 10px var(--white);
-    border-radius: 16px;
+    border-radius: var(--radius-card);
     .A_CardArticleImage {
       width: 300px;
       height: 195px;
@@ -1353,7 +1353,7 @@
   .M_ArticleCardBig {
     width: 328px;
     height: 354px;
-    border-radius: 14px;
+    border-radius: var(--radius-card);
     box-shadow: none;
     background: none;
     .W_TarotCardShadow {
@@ -1384,7 +1384,7 @@
     padding-top: 20px;
     padding-bottom: 10px;
     border-bottom: solid 1px black;
-    border-radius: 0px;
+    border-radius: var(--radius-card);
     justify-content: left;
     .A_Heading4 {
       text-align: left;
@@ -1402,7 +1402,7 @@
   .M_TarotCardWide {
     width: 338px;
     height: 232px;
-    border-radius: 8px;
+    border-radius: var(--radius-card);
     .W_TarotCardShadow {
       filter: drop-shadow(0px 4px 9px var(--blackshadow));
     }
@@ -1451,7 +1451,7 @@
   .M_Search {
     width: 328px;
     height: 34px;
-    border-radius: 8px;
+    border-radius: var(--radius-small);
     padding: 0 8px;
     font-size: 14px;
     line-height: 34px;

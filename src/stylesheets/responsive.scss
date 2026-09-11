@@ -194,7 +194,7 @@
   }
   .hreftopromo {
     height: 13vw;
-    border-radius: 5vw;
+    border-radius: var(--radius-pill);
     font-size: 5vw;
     padding-bottom: 2vw;
   }
@@ -369,7 +369,7 @@
     font-size: 5vw;
     padding: 3vw;
     padding-top: 1.5vw;
-    border-radius: 4vw;
+    border-radius: var(--radius-pill);
   }
   .block4 {
     height: 24.888800000000003vh;
@@ -377,7 +377,7 @@
   }
   .hreftopromo {
     height: 13vw;
-    border-radius: 5vw;
+    border-radius: var(--radius-pill);
     font-size: 5vw;
     padding-bottom: 2vw;
   }
@@ -574,7 +574,7 @@
     font-size: 5vw;
     padding: 3vw;
     padding-top: 1.5vw;
-    border-radius: 4vw;
+    border-radius: var(--radius-pill);
   }
   .block4 {
     height: 50.8888vh;
@@ -582,7 +582,7 @@
   }
   .hreftopromo {
     height: 13vw;
-    border-radius: 5vw;
+    border-radius: var(--radius-pill);
     font-size: 5vw;
     padding-bottom: 2vw;
   }
