@@ -4,7 +4,9 @@ const zlib = require('node:zlib')
 const assert = require('node:assert/strict')
 const root = path.resolve(__dirname, '../docs')
 const files = fs.readdirSync(root, { recursive: true })
-const pages = files.filter((file) => file.endsWith('.html'))
+const pages = files.filter(
+  (file) => file.endsWith('.html') && file !== 'yandex_8174516e8ad894de.html'
+)
 const failures = []
 const brokenLinks = []
 const report = {}

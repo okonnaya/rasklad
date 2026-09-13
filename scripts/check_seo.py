@@ -41,6 +41,8 @@ for page in root.rglob("*.html"):
     relative = page.relative_to(root).as_posix()
     if relative in {"cardoftheday.html", "articles/article.html"}:
         continue  # Historical redirect stubs, not sitemap destinations.
+    if relative == "yandex_8174516e8ad894de.html":
+        continue  # Ownership verification document, not a content page.
     head = Head()
     head.feed(page.read_text().split("</head>")[0])
     assert len(head.titles) == 1 and head.titles[0], relative
