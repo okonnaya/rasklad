@@ -19,7 +19,15 @@ for (const page of pages) {
     const [, tag, , ref] = match
     if (/^(?:https?:|data:|mailto:|tel:|#|javascript:)/.test(ref)) continue
     const url = new URL(ref.replace(/&amp;/g, '&'), `https://local/${page}`)
+    if (tag === 'a')
+      assert.ok(
+        !url.pathname.endsWith('.html'),
+        `${page}: legacy page link ${ref}`
+      )
     let local = path.join(root, decodeURIComponent(url.pathname))
+    if (tag === 'a' && !path.extname(url.pathname) && url.pathname !== '/') {
+      local += '.html'
+    }
     if (url.pathname.endsWith('/')) local = path.join(local, 'index.html')
     if (!fs.existsSync(local))
       (tag === 'a' ? brokenLinks : failures).push(`${page}: ${ref}`)
@@ -58,8 +66,7 @@ fs.writeFileSync(
 console.log(
   `Verified ${pages.length} pages and their script/image/stylesheet references.`
 )
-if (brokenLinks.length)
-  console.log('Existing broken static links:\n' + brokenLinks.join('\n'))
+assert.deepEqual(brokenLinks, [], 'Missing internal link destinations')
 for (const page of [
   'index.html',
   'cards.html',

@@ -43,8 +43,9 @@ test('all generated card links target existing source pages', () => {
   const path = require('node:path')
   for (const item of [...cards, ...articles, ...tellings]) {
     const link = contentLink(item)
+    assert.ok(!link.endsWith('.html'))
     assert.ok(
-      fs.existsSync(path.join(__dirname, '../src', link)),
+      fs.existsSync(path.join(__dirname, '../src', link + '.html')),
       `${item.id}: ${link}`
     )
   }

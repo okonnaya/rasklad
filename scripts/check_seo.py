@@ -48,7 +48,7 @@ for page in root.rglob("*.html"):
     assert len(head.titles) == 1 and head.titles[0], relative
     assert head.titles[0] not in titles, f"Duplicate title: {relative}"
     titles.add(head.titles[0])
-    expected = "https://raskladik.com/" + ("" if relative == "index.html" else relative)
+    expected = "https://raskladik.com/" + ("" if relative == "index.html" else relative.removesuffix(".html"))
     assert head.canonical == [expected], relative
     for name in ["description", "og:title", "og:description", "og:url", "og:image", "twitter:title"]:
         assert len(head.meta.get(name, [])) == 1 and head.meta[name][0], (relative, name)

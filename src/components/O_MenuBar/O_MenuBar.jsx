@@ -7,11 +7,11 @@ import A_MenuLogo from '../A_MenuLogo/A_MenuLogo.jsx'
 import A_MenuMobileToggle from '../A_MenuMobileToggle/A_MenuMobileToggle.jsx'
 
 const menu = [
-  ['погадать', '/fortunetellings.html'],
-  ['почитать', '/articles.html'],
-  ['толкования карт', '/cards.html'],
-  ['карта дня', '/fortunetellings/cardoftheday.html'],
-  ['о нас', '/about.html']
+  ['погадать', '/fortunetellings'],
+  ['почитать', '/articles'],
+  ['толкования карт', '/cards'],
+  ['карта дня', '/fortunetellings/cardoftheday'],
+  ['о нас', '/about']
 ]
 
 export default function O_MenuBar() {
@@ -20,7 +20,7 @@ export default function O_MenuBar() {
   const [expanded, setExpanded] = useState(false)
   function submit() {
     if (query.trim().length >= 3)
-      location.href = '/search.html?request=' + encodeURIComponent(query.trim())
+      location.href = '/search?request=' + encodeURIComponent(query.trim())
   }
   return (
     <div className={classnames('O_MenuBar', { Expanded: expanded })}>

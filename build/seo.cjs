@@ -84,7 +84,8 @@ const escape = (value) =>
     .replace(/"/g, '&quot;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
-const url = (name) => origin + '/' + (name === 'index.html' ? '' : name)
+const url = (name) =>
+  origin + '/' + (name === 'index.html' ? '' : name.replace(/\.html$/, ''))
 class SeoPlugin {
   apply(compiler) {
     compiler.hooks.thisCompilation.tap('SeoPlugin', (compilation) => {
